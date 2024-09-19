@@ -1,0 +1,4 @@
+git add app.py
+git add templates/
+git add requirements.txt
+git add Procfile

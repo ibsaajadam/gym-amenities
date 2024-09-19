@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Court Availability</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-blue-50">
+  <div class="container mx-auto p-8">
+    <h1 class="text-4xl font-bold mb-8 text-center">Court Availability</h1>
+    <ul class="space-y-4">
+      {% for court, availability in courts.items() %}
+      <li class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-2xl font-semibold">{{ court }}</h2>
+        <p class="text-gray-600">Status: {{ availability }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</body>
+</html>
